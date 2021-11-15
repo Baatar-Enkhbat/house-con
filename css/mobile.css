@@ -133,11 +133,18 @@
       height: 55vh;
     }
   }
+
   
   @media (max-width: 700px) {
 
     .container{
       flex-direction: column;
+    }
+
+    .container nav ul{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
     }
     
     .phone-mail {
@@ -248,5 +255,11 @@
     
       .menu ul li a{
           font-size: 10px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .slider .myslide{
+        height: 35vh;
       }
     }
